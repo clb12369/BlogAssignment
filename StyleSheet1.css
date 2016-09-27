@@ -1,0 +1,62 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+/* Test column format*/
+.four-column {
+  padding: 1em;
+  -moz-column-count: 3;
+  -moz-column-gap: 1em;
+  -webkit-column-count: 4;
+  -webkit-column-gap: 1em;
+  column-count: 4;
+  column-gap: 1em;
+}
+.header-4 {
+    color:grey;
+}
+.grid {
+    font-size: 0;
+}
+
+.grid > div {
+    display: inline-block;
+    font-size: medium;
+}
+
+.grid-2 > div {
+    width: 50%;
+}
+
+.grid-3 > div {
+    width: 33%;
+}
+
+/* Found better classes for formatting*/
+.container {
+  display: -webkit-flex;
+  display: flex;
+}
+.spacingCol {
+  -webkit-flex: initial;
+          flex: initial;
+  width: 225px;
+  min-width: 100px;
+}
+.alignedCol {
+  -webkit-flex: none;
+          flex: none;
+  width: 200px;
+}
+.flexWidth_2p {
+  -webkit-flex: 2;
+          flex: 2;
+}
+.flexWidth_1p {
+  -webkit-flex: 1;
+          flex: 1;
+}
+.formSearch {
+    width:150px;
+    border:none;
+}
