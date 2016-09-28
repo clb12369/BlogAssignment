@@ -1,7 +1,10 @@
-﻿* {
+﻿*, *:after, *:before {
     box-sizing: border-box;
 }
 
+.headerImage {
+    width: 100%;
+}
 /* Test column format*/
 .four-column {
   padding: 1em;
@@ -40,8 +43,7 @@
 .spacingCol {
   -webkit-flex: initial;
           flex: initial;
-  width: 225px;
-  min-width: 100px;
+  width: 200px;
 }
 .alignedCol {
   -webkit-flex: none;
@@ -55,6 +57,14 @@
 .flexWidth_1p {
   -webkit-flex: 1;
           flex: 1;
+          position:relative;
+}
+.flexWidth_1p postbox{
+    display:inline-block ;
+    border: 1px solid gray;
+    bottom: 0;
+    right: 0;
+    position: absolute
 }
 .formSearch {
     width:150px;

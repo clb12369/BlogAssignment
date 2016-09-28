@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./StyleSheet1.css" type="text/css" />
 </head>
 <body>
-    <img src="./assets/HoustonSkyline.png" width="auto" height="350" />
+    <img class="headerImage" src="./assets/HoustonSkyline.png" />
     <div class="container">
         <!-- First column empty to align contents of class=none below the Iron Yard logo. -->
         <!-- Need to calculate proper width for class=spacingCol to improve alignment.-->
@@ -23,9 +23,11 @@
                 <p></p>
                 <p>SEARCH</p>
                 <!--- insert search box here. -->
-                <form class="formSearch">
-                    <input type="text" placeholder="Search" required>
-                    <input type="image" src="./assets/" value="Search">
+                <form class="formSearch" action="performSearch.php" method="get">
+                    <div class="grid-2">
+                        <input type="text" placeholder="Search" required>
+                        <input type="image" src="https://cdn2.iconfinder.com/data/icons/picons-essentials/57/search-16.png" value="Search">
+                    </div>
                 </form>
             </h4>
         </div>
@@ -35,8 +37,13 @@
             <img src="./assets/IronYardWall.png" width="auto" height="auto" />
         </div>
         <div class="flexWidth_1p">
-
-
+            <div class="postbox">
+                <span>Never miss a post!</span><br />
+                <div>
+                    <img src="./assets/IronYardLogo.bmp"/>
+                    <
+                </div>
+            </div>
         </div>
 
     </div>
